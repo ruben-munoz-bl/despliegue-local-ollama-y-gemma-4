@@ -1,0 +1,25 @@
+﻿Elige backend para el chat:
+  1) local  (Ollama en localhost:11434)
+  2) remoto (VM de Azure via tunel SSH -> 127.0.0.1:21434)
+  3) ambos  (mismo prompt a los dos)
+Backend [1/2/3]: 
+Chat con: local (gemma4:e4b), remoto (gemma4:e4b)
+Comandos: 'salir' para terminar | 'reset' para borrar el historial.
+
+tu> 
+--- local (gemma4:e4b) --- 47.66 s | 5.01 tok/s | 239 tok out | finish=stop
+Un modelo de lenguaje es un programa de inteligencia artificial entrenado con vastas cantidades de texto para comprender, generar y predecir el lenguaje humano de manera coherente.
+
+
+--- remoto (gemma4:e4b) --- 112.25 s | 3.29 tok/s | 369 tok out | finish=stop
+Un modelo de lenguaje es un sistema de inteligencia artificial entrenado en vastos volúmenes de texto para comprender, generar y predecir el lenguaje humano de manera coherente.
+
+tu> 
+--- local (gemma4:e4b) --- 88.709 s | 4.67 tok/s | 414 tok out | finish=stop
+La inferencia local ejecuta el modelo directamente en el dispositivo del usuario, priorizando la privacidad y la latencia, mientras que la inferencia en la nube utiliza servidores remotos para acceder a una mayor potencia de cómputo y escalabilidad.
+
+
+--- remoto (gemma4:e4b) --- 128.109 s | 3.08 tok/s | 395 tok out | finish=stop
+La inferencia local ejecuta el modelo directamente en el dispositivo del usuario, priorizando la privacidad y la velocidad, mientras que la inferencia en la nube utiliza servidores remotos potentes para acceder a una capacidad de cómputo mucho mayor.
+
+tu> Fin del chat.

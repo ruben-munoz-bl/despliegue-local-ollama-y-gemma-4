@@ -1,0 +1,24 @@
+Validacion objetiva - tanda comparativa practica 2
+Fichero: results\chat_dual_20261019.json
+Params: {"max_tokens": 1600, "temperature": 0.2, "timeout": 900.0, "system": null, "no_think": true}
+
+== p1: razonamiento matematico (esperado: 11:18, paso a paso) ==
+  [local ] contiene 11:18: OK; menciona 1,8 h: no; chars=2616
+  [remoto] contiene 11:18: OK; menciona 1,8 h: si; chars=2724
+
+== p2: programacion (extraer y EJECUTAR primos(n)) ==
+  [local ] ejecuta y da primeros 10 primos: OK | complejidad mencionada: si | primos(10) -> [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+  [remoto] ejecuta y da primeros 10 primos: OK | complejidad mencionada: si | primos(10) -> [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+
+== p3: resumen en exactamente 2 frases ==
+  [local ] frases detectadas: 2 -> OK; chars=269
+  [remoto] frases detectadas: 2 -> OK; chars=277
+
+== p4: JSON valido, solo JSON, 4 campos con tipos ==
+  [local ] solo-JSON (sin texto extra): si | 4 campos+tipos: OK | {"nombre": "Elena García", "edad": 34, "ciudad": "Madrid", "profesion": "Ingeniera de Software"}
+  [remoto] solo-JSON (sin texto extra): si | 4 campos+tipos: OK | {"nombre": "Elena García", "edad": 34, "ciudad": "Madrid", "profesion": "Ingeniera de Software"}
+
+== p5: ingles, 2 frases, dato 'E' y parametros ==
+  [local ] 2 frases: OK | ingles: si | menciona 'effective': no | numero: 4B
+  [remoto] 2 frases: OK | ingles: si | menciona 'effective': no | numero: 4B
+

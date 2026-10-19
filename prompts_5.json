@@ -1,0 +1,30 @@
+{
+  "descripcion": "Los 5 prompts del reto 'Chat Local vs Remoto' (practica 2). Se envian IDENTICOS a ambos backends (local y remoto).",
+  "prompts": [
+    {
+      "id": "p1_razonamiento",
+      "categoria": "razonamiento matematico",
+      "prompt": "Un tren sale de la estación a las 9:00 a 60 km/h. Otro tren sale de la misma estación a las 9:30 en sentido contrario a 90 km/h. ¿A qué hora estarán separados por 300 km? Razona el cálculo paso a paso."
+    },
+    {
+      "id": "p2_codigo",
+      "categoria": "programacion",
+      "prompt": "Escribe una función Python llamada primos(n) que devuelva una lista con los primeros n números primos. Devuelve solo el código en un bloque ```python``` seguido de una línea de comentario con su complejidad temporal."
+    },
+    {
+      "id": "p3_resumen",
+      "categoria": "resumen",
+      "prompt": "Resume el siguiente texto en exactamente 2 frases:\n\n\"La inferencia local de modelos de lenguaje permite ejecutar modelos en el propio ordenador sin enviar datos a servicios externos. A cambio, está limitada por el hardware disponible: memoria RAM o VRAM, velocidad de CPU/GPU y capacidad de disco. La inferencia en la nube, en cambio, ofrece acceso a modelos mucho más grandes y hardware especializado, pero introduce dependencia de la red, costes por uso y consideraciones de privacidad.\""
+    },
+    {
+      "id": "p4_json",
+      "categoria": "formato / salida estructurada",
+      "prompt": "Devuelve SOLO un JSON válido, sin texto adicional y sin bloques de código, con estos campos: nombre (string), edad (número), ciudad (string), profesion (string). Inventa los datos de una persona."
+    },
+    {
+      "id": "p5_ingles",
+      "categoria": "conocimiento + idioma (ingles)",
+      "prompt": "Answer in English in exactly 2 sentences: what does the 'E' in 'Gemma 4 E4B' stand for, and how many parameters does that model have?"
+    }
+  ]
+}
